@@ -18,7 +18,9 @@ Router.onBeforeAction ->
 Router.route 'home',
   path: '/'
   template: 'leaderboard'
-  # waitOn: -> Meteor.subscribe 'users'
+  waitOn: -> 
+    if Meteor.userId()
+      return Meteor.subscribe 'users'
 
 
 

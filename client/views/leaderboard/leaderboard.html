@@ -1,0 +1,17 @@
+<template name="leaderboard">
+  <div class="leaderboard">
+    {{#each users}}
+      {{> user}}
+    {{/each}}
+
+    {{#if selected}}
+      <button class="add5">Add 5</button>
+    {{else}}
+      <div>Select a user.</div>
+    {{/if}}
+  </div>
+</template>
+
+<template name="user">
+  <div class="user {{isSelected}}">{{username}}: {{score}}</div>
+</template>

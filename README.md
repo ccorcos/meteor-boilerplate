@@ -6,22 +6,20 @@ pacakges:
 - coffeescript
 - [lauricio:less-autoprefixer](https://github.com/lauricio/less-autoprefixer)
 - [iron:router](https://github.com/eventedmind/iron-router)
-<!-- - [manuel:viewmodel](https://github.com/ManuelDeLeon/viewmodel) -->
 - [digilord:sugarjs](https://github.com/digilord/meteor-sugarjs.git)
 - [wizonesolutions:underscore-string](https://github.com/wizonesolutions/meteor-underscore-string.git)
 - [stevezhu:lodash](https://github.com/stevezhu/meteor-lodash.git)
-
+- [anti:fake](https://github.com/anticoders/meteor-fake.git)
 
 * remove autopublish
+* remove insecure
 
 
 To Do:
+- bootstrap create fake users and scores.
 - leaderboard
 - user profile page
 - animation, mobile, etc
-- bootstrap create fake users and scores.
-- meteor methods pattern for updating
-- remove insecure and autopublish
 
 Later: 
 - avatar and facebook sync

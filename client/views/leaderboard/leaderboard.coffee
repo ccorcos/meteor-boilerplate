@@ -5,7 +5,7 @@ Template.leaderboard.helpers
   selected: -> Session.get 'selected'
 
 Template.leaderboard.events
-  'click button.add5': (e,t) ->
+  'click .add5': (e,t) ->
     Meteor.call 'add5', Session.get 'selected'
 
 Template.user.helpers

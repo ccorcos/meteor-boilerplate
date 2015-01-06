@@ -1,0 +1,62 @@
+.leaderboard {
+
+  margin-top: @navHeight;
+  margin-bottom: @toolbarHeight;
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    background-color: @color1;
+    height: @navHeight;
+    width: 100%;
+    text-align: center;
+    line-height: @navHeight;
+    .title {
+      color: @textColor1;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      font-family: helvetica;
+      font-size: 1.5rem;
+    }
+  }
+
+  .user {
+    display: block;
+    height: @rowHeight;
+    width: 100%;
+    text-align: center;
+    line-height: @rowHeight;
+    
+    &.selected {
+      background-color: @color3;
+      span {
+        color: @textColor3;
+      }
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      font-family: helvetica;
+    }
+  }
+
+  .toolbar {
+    position: fixed;
+    bottom: 0;
+    height: @toolbarHeight;
+    background-color: @color2;
+    width: 100%;
+    text-align: center;
+    line-height: @toolbarHeight;
+    span {
+      color: @textColor2;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      font-family: helvetica;
+    }
+  }
+}

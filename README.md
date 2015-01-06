@@ -16,10 +16,13 @@ pacakges:
 
 
 To Do:
-- bootstrap create fake users and scores.
-- leaderboard
-- user profile page
+- less imports, colors, styles, etc.
+- mobile optimization, headers, title
 - animation, mobile, etc
+- user profile page
 
-Later: 
+- spiderable? fastrender?
+
+- collectionfs, gridfs, dropzone
 - avatar and facebook sync
+-

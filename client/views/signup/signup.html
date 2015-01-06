@@ -1,0 +1,10 @@
+<template name="signup">
+  <div class="signup">
+    <input type="text" placeholder="username" data-bind="value: username"/>
+    <input type="text" placeholder="email" data-bind="value: email"/>
+    <input type="password" placeholder="password" data-bind="value: password"/>
+    <input type="password" placeholder="verify" data-bind="value: verify, returnKey: signup"/>
+    <div class="error" data-bind="text: error"></div>
+    <button data-bind="enabled: canSignup, click: signup">signup</button>
+  </div>  
+</template>

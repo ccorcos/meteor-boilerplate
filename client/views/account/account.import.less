@@ -1,0 +1,55 @@
+.account {
+
+  margin-top: @navHeight + 80px;
+  margin-bottom: @toolbarHeight;
+
+  .error {
+    color: @color4;
+    text-align: center;
+  }
+
+  .message {
+    text-align: center;
+  }
+
+  input {
+      margin-bottom: 25px;
+  }
+
+  button, input[type="button"], input[type="submit"] {
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 10%;
+    border: 0;
+    color: @textColor4;
+    background-color: @color4;
+  }
+
+  .links {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    a:nth-child(1) {
+      background-color: @color2;
+      color: @textColor2;
+    }
+    a:nth-child(2) {
+      background-color: @color1;
+      color: @textColor1;
+    }
+    a {
+      height: @toolbarHeight;
+      width: 100%;
+      text-align: center;
+      line-height: @toolbarHeight;
+      display: block;
+      span {
+        height: @toolbarHeight;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: @toolbarHeight;
+        font-family: helvetica;
+      }
+    }
+  }
+}

@@ -1,11 +1,10 @@
 html {
   width: 100%;
-  // height: 100%;
 }
 body {
   margin: 0;
   width: 100%;
-  // min-height: 100%;
+  font-family: helvetica;
 }
 
 // primary color, blue
@@ -20,11 +19,16 @@ body {
 @color3: #FFDC00;
 @textColor3: #000000;
 
+// highlight color, red
+@color4: #FF4136;
+@textColor4: #FFFFFF;
+
 
 @navHeight: 75px;
 @rowHeight: 55px;
 @toolbarHeight: 65px;
-
+@inputHeight: 40px;
+@buttonHeight: 50px;
 
 
 .scrollable-y {
@@ -33,3 +37,43 @@ body {
 }
 
 @import "views/leaderboard/leaderboard.import.less";
+@import "views/account/account.import.less";
+
+
+@import "styles/input.import.less";
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  background-color: @color1;
+  height: @navHeight;
+  width: 100%;
+  text-align: center;
+  line-height: @navHeight;
+  .title {
+    color: @textColor1;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-family: helvetica;
+    font-size: 1.5rem;
+  }
+}
+
+.toolbar {
+  position: fixed;
+  bottom: 0;
+  height: @toolbarHeight;
+  background-color: @color2;
+  width: 100%;
+  text-align: center;
+  line-height: @toolbarHeight;
+  span {
+    color: @textColor2;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-family: helvetica;
+  }
+}

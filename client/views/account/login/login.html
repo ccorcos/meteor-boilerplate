@@ -1,16 +1,18 @@
 <template name="login">
   <div class="login account">
     
+    <div class="nav"><span class="title">Login</span></div>
+
     <form id="login">
       <input type="text" name="username" placeholder="username" autocorrect="off" autocapitalize="off">
       <input type="password" name="password" placeholder="password" autocorrect="off" autocapitalize="off">
       <div class="error">{{error}}</div>
-      <input type="submit" value="login">
+      <button type="submit">login</button>
     </form>
 
     <div class="links">
-      <a href="{{pathFor 'forgot'}}">forgot password?</a>
-      <a href="{{pathFor 'signup'}}">signup</a>
+      <a href="{{pathFor 'forgot'}}"><span>forgot password?</span></a>
+      <a href="{{pathFor 'signup'}}"><span>signup</span></a>
     </div>
 
   </div>

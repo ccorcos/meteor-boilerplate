@@ -17,9 +17,15 @@ pacakges:
 
 To Do:
 - less imports, colors, styles, etc.
-- mobile optimization, headers, title
+  - menu drawer with logout
+  - style login, signup 
+  - local market animations between pages, and uihooks, and reoroder animations
+- mobile optimization, head, title, icons,etc.
 - animation, mobile, etc
 - user profile page
+- how to import icons, fonts
+- where to put images
+- responsive deisgn
 
 - spiderable? fastrender?
 

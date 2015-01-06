@@ -1,0 +1,20 @@
+<template name="login">
+  <div class="login account">
+    
+    <form id="login">
+      <input type="text" name="username" placeholder="username" autocorrect="off" autocapitalize="off">
+      <input type="password" name="password" placeholder="password" autocorrect="off" autocapitalize="off">
+      <div class="error">{{error}}</div>
+      <input type="submit" value="login">
+    </form>
+
+    <div class="links">
+      <a href="{{pathFor 'forgot'}}">forgot password?</a>
+      <a href="{{pathFor 'signup'}}">signup</a>
+    </div>
+
+  </div>
+</template>
+
+
+

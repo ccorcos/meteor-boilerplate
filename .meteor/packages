@@ -8,6 +8,8 @@ meteor-platform
 insecure
 coffeescript
 lauricio:less-autoprefixer
-manuel:viewmodel
 accounts-password
 iron:router
+digilord:sugarjs
+stevezhu:lodash
+wizonesolutions:underscore-string

@@ -1,17 +1,21 @@
 
+crater io post about helpful patterns, submit form, error, message, etc. use a reactive variable!
 
 pacakges:
 - accounts-password
 - coffeescript
 - [lauricio:less-autoprefixer](https://github.com/lauricio/less-autoprefixer)
 - [iron:router](https://github.com/eventedmind/iron-router)
-- [manuel:viewmodel](https://github.com/ManuelDeLeon/viewmodel)
+<!-- - [manuel:viewmodel](https://github.com/ManuelDeLeon/viewmodel) -->
+- [digilord:sugarjs](https://github.com/digilord/meteor-sugarjs.git)
+- [wizonesolutions:underscore-string](https://github.com/wizonesolutions/meteor-underscore-string.git)
+- [stevezhu:lodash](https://github.com/stevezhu/meteor-lodash.git)
+
 
 * remove autopublish
 
 
 To Do:
-- custom login pages with mvvm
 - leaderboard
 - user profile page
 - animation, mobile, etc

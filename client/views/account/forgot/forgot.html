@@ -1,0 +1,18 @@
+
+<template name="forgot">
+
+  <div class="forgot account">
+    <form id="recover">
+      <input type="text" name="email" placeholder="email" autocorrect="off" autocapitalize="off">
+      <div class="error">{{error}}</div>
+      <div class="message">{{message}}</div>
+      <input type="submit" value="send recovery email">
+    </form>
+
+    <div class="links">
+      <a href="{{pathFor 'login'}}">login</a>
+    </div>
+
+  </div>
+</template>
+

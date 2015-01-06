@@ -1,0 +1,1 @@
+Template.registerHelper 'sessionVar', (string) -> Session.get(string)

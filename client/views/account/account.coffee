@@ -1,0 +1,2 @@
+@afterLoginSignup = ->
+  Router.go 'home'

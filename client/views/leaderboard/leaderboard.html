@@ -1,6 +1,12 @@
 <template name="leaderboard">
   <div class="leaderboard">
-    <div class="nav"><span class="title">Leaderboard</span></div>
+    <div class="nav">
+      <span class="title">Leaderboard</span>
+      <div class="right"><i class="entypo logout"></i></div>
+    </div>
+
+    
+
     {{#each users}}
       {{> user}}
     {{/each}}

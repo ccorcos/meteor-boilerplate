@@ -7,6 +7,8 @@ Template.leaderboard.helpers
 Template.leaderboard.events
   'click .add5': (e,t) ->
     Meteor.call 'add5', Session.get 'selected'
+  'click .logout': (e,t) ->
+    Meteor.logout()
 
 Template.user.helpers
   isSelected: () -> 

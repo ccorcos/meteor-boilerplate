@@ -4,8 +4,14 @@ html {
 body {
   margin: 0;
   width: 100%;
-  font-family: helvetica;
+  font-family: 'roboto', helvetica, sans-serif;;
 }
+
+@font-face {
+  font-family: 'roboto';
+  src: url('/fonts/roboto/Roboto-Thin.ttf');
+}
+
 
 // primary color, blue
 @color1: #0074D9;
@@ -38,8 +44,6 @@ body {
 
 @import "views/leaderboard/leaderboard.import.less";
 @import "views/account/account.import.less";
-
-
 @import "styles/input.import.less";
 
 
@@ -56,8 +60,31 @@ body {
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
-    font-family: helvetica;
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  .right {
+    color: @textColor1;
+    line-height: @navHeight;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    * {
+      vertical-align: middle;
+      font-size: 3rem;
+    }
+  }
+  .left {
+    color: @textColor1;
+    line-height: @navHeight;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 15px;
+    * {
+      vertical-align: middle;
+      font-size: 3rem;
+    }
   }
 }
 
@@ -74,6 +101,5 @@ body {
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
-    font-family: helvetica;
   }
 }

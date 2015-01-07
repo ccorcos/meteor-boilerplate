@@ -1,7 +1,11 @@
 .account {
 
-  margin-top: @navHeight + 80px;
+  margin-top: @navHeight + 15px;
   margin-bottom: @toolbarHeight;
+
+  &.login {
+    margin-bottom: 2*@toolbarHeight;
+  }
 
   .error {
     color: @color4;
@@ -18,11 +22,12 @@
 
   button, input[type="button"], input[type="submit"] {
     width: 80%;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 10%;
     border: 0;
     color: @textColor4;
     background-color: @color4;
+    margin-bottom: 15px;
   }
 
   .links {
@@ -48,7 +53,6 @@
         display: inline-block;
         vertical-align: middle;
         line-height: @toolbarHeight;
-        font-family: helvetica;
       }
     }
   }

@@ -1,5 +1,27 @@
+# Work in Progress
 
-crater io post about helpful patterns, submit form, error, message, etc. use a reactive variable!
+## To Do:
+- local market animations between pages, and uihooks, and reoroder animations
+- less style guide page
+- responsive deisgn
+- email for recover password
+- spiderable? fastrender?
+- dynamically change title for SEO?
+
+
+- collectionfs, gridfs, dropzone
+- avatar and facebook sync
+- user profile page?
+
+
+- splash screen iPhone 6, iPhone 6+, test all of them! Android splash screen
+- meteor add launch-screen
+- test platforms
+
+
+- helpful patterns, submit form, error, message, etc. use a reactive variable!
+
+
 
 
 # Meteor Boilerplate
@@ -68,19 +90,3 @@ Some important patterns to notice here is that we do not use allow-deny rules or
 You'll also see how to import fonts and icons, define less variables, and import other less files properly.
 
 
-# To Do:
-- local market animations between pages, and uihooks, and reoroder animations
-- loading screen with spinner! codrops
-- less style guide page
-- responsive deisgn
-- user profile page?
-- email for recover password
-
-- spiderable? fastrender?
-- dynamically change title for SEO?
-
-
-- collectionfs, gridfs, dropzone
-- avatar and facebook sync
-
-- splash screen iPhone 6, iPhone 6+, test all of them! Android splash screen, etc.

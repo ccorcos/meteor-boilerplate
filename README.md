@@ -10,6 +10,7 @@ This repo is a boilerplate for meteor projects that have users, collections, and
 
 - accounts-password
 - coffeescript
+- fastclick
 - [lauricio:less-autoprefixer](https://github.com/lauricio/less-autoprefixer)
 - [digilord:sugarjs](https://github.com/digilord/meteor-sugarjs.git)
 - [wizonesolutions:underscore-string](https://github.com/wizonesolutions/meteor-underscore-string.git)
@@ -68,21 +69,18 @@ You'll also see how to import fonts and icons, define less variables, and import
 
 
 # To Do:
-- splash screen iPhone 6, iPhone 6+, test all of them! Android splash screen, etc.
-
-- fast click!
-- loading screen with spinner!
-- mobile optimization, head, title, icons, splash pages, etc.
-- less style guide page
 - local market animations between pages, and uihooks, and reoroder animations
-- animation, mobile, etc
-- user profile page
+- loading screen with spinner! codrops
+- less style guide page
 - responsive deisgn
+- user profile page?
+- email for recover password
 
 - spiderable? fastrender?
-- dynamically change title for SEO
+- dynamically change title for SEO?
 
 
 - collectionfs, gridfs, dropzone
 - avatar and facebook sync
--
+
+- splash screen iPhone 6, iPhone 6+, test all of them! Android splash screen, etc.

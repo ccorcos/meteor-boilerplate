@@ -1,0 +1,55 @@
+
+ // Universal styling 
+.loader{
+  margin: 0 auto;
+  height: 30px;
+  width: 60px;
+  div {
+    float: left;  
+    background: @color3;
+    height: 100%;
+    width: 5px;
+    margin-right: 1px;
+    display: inline-block;
+
+    animation: loading2 1.5s infinite ease-in-out;
+    transform: scaleY(0.05) translateX(-5px);
+
+    // @include animation(loading2 1.5s infinite ease-in-out);
+    // @include transform(scaleY(0.05) translateX(-5px));
+
+  }
+  .shaft1 { animation-delay: 0.05s; }
+  .shaft2 { animation-delay: 0.1s; }
+  .shaft3 { animation-delay: 0.15s; }
+  .shaft4 { animation-delay: 0.2s; }
+  .shaft5 { animation-delay: 0.25s; }
+  .shaft6 { animation-delay: 0.3s; }
+  .shaft7 { animation-delay: 0.35s; }
+  .shaft8 { animation-delay: 0.4s; }
+  .shaft9 { animation-delay: 0.45s; }
+  .shaft10 { animation-delay: 0.5s; }
+}
+
+.shaft-load2 {
+  text-align: center;
+  box-sizing: border-box;
+   div {
+
+    animation: loading2 1.5s infinite ease-in-out;
+    transform: scaleY(0.05) translateX(-5px);
+  }
+}
+
+@keyframes loading2 {
+  10% {
+    background: @color1;
+  }
+  15% { 
+    transform: scaleY(1.2) translateX(10px);
+    background: @color1;
+  }
+  90%, 100% { 
+    transform: scaleY(0.05) translateX(-5px);
+  }
+}

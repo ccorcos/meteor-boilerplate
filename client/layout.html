@@ -3,9 +3,21 @@
 </template>
 
 <template name="loading">
-  loading...
+  <div class="loading">
+    <div class="nav">
+      <span class="title">Loading</span>
+    </div>
+    
+    {{>loader}}
+
+  </div>
 </template>
 
 <template name="notFound">
-  not found (404)
+  <div class="notFound">
+    <div class="nav">
+      <span class="title">Error</span>
+    </div>
+    <div class="code">404</div>
+  </div>
 </template>

@@ -45,6 +45,7 @@ body {
 @import "views/leaderboard/leaderboard.import.less";
 @import "views/account/account.import.less";
 @import "styles/input.import.less";
+@import "components/loader.import.less";
 
 
 .nav {
@@ -101,5 +102,26 @@ body {
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+  }
+}
+
+.loading {
+  margin-top: 3*@navHeight;
+  height: 100%;
+  .loader {
+    position: absolute;
+    top: ~"calc(50% - @navHeight)";
+    left: ~"calc(50% - 30px)";
+  }
+}
+
+.notFound {
+  margin-top: 3*@navHeight;
+  height: 100%;
+  line-height: 100%;
+  text-align: center;
+  .code {
+    font-family: monospace;
+    font-size: 64px;
   }
 }

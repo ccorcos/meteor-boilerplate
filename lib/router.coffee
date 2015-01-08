@@ -37,3 +37,8 @@ Router.route 'reset',
     Session.set 'resetPasswordToken', @params.id
     @next()
 
+
+
+
+Router.route 'loading'
+Router.route 'notFound'

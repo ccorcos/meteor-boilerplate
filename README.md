@@ -1,28 +1,26 @@
 # Work in Progress
 
 ## To Do:
-- local market animations between pages, and uihooks, and reoroder animations
-- less style guide page
-- responsive deisgn
-- email for recover password
-- spiderable? fastrender?
-- dynamically change title for SEO?
 
-
-- collectionfs, gridfs, dropzone
+- bootstrap random images
 - avatar and facebook sync
+- collectionfs, gridfs, dropzone
 - user profile page?
 
-
 - splash screen iPhone 6, iPhone 6+, test all of them! Android splash screen
-- meteor add launch-screen
+- meteor add launch-screen?
 - test platforms
-
 
 - helpful patterns, submit form, error, message, etc. use a reactive variable!
 
+Maybe:
+- spiderable
+- fastrender
+- SEO title and description
 
-
+Later:
+- email for recover password
+- deploy with mup
 
 # Meteor Boilerplate
 

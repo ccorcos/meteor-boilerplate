@@ -39,6 +39,6 @@ Router.route 'reset',
 
 
 
-
+# just so you can see them if you want
 Router.route 'loading'
 Router.route 'notFound'

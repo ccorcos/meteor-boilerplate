@@ -1,4 +1,4 @@
-Session.set 'selected', null
+Session.setDefault 'selected', null
 
 Template.leaderboard.helpers
   users: () -> Meteor.users.find {}, {sort: {score: -1, username: 1}}

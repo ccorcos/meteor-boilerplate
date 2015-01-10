@@ -1,19 +1,21 @@
 <template name="signup">
-  <div class="signup account">
+  <div class="signup account page">
     
     <div class="nav"><span class="title">Signup</span></div>
 
-    <form id="signup">
-      <input type="text" name="username" placeholder="username" autocorrect="off" autocapitalize="off">
-      <input type="text" name="email" placeholder="email" autocorrect="off" autocapitalize="off">
-      <input type="password" name="password" placeholder="password" autocorrect="off" autocapitalize="off">
-      <input type="password" name="verify" placeholder="verify password" autocorrect="off" autocapitalize="off">
-      <div class="error">{{error}}</div>
-      <button type="submit">signup</button>
-    </form>
+    <div class="content under-nav above-toolbar">
+      <form id="signup">
+        <input type="text" name="username" placeholder="username" autocorrect="off" autocapitalize="off">
+        <input type="text" name="email" placeholder="email" autocorrect="off" autocapitalize="off">
+        <input type="password" name="password" placeholder="password" autocorrect="off" autocapitalize="off">
+        <input type="password" name="verify" placeholder="verify password" autocorrect="off" autocapitalize="off">
+        <div class="error">{{error}}</div>
+        <button type="submit">signup</button>
+      </form>
+    </div>
 
-    <div class="links">
-      <a href="{{pathFor 'login'}}"><span>login</span></a>
+    <div class="toolbar">
+      <div class="toLogin">login</div>
     </div>
 
   </div>

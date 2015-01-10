@@ -2,6 +2,19 @@
 
 ## To Do:
 
+- no SEO because we need to transition based on events to use animation. plus everything is behind a login screen
+
+- styles more like the blaze-animations with absolute rather than fixed positioning
+
+- write about nav, content, toolbar formatting.
+- write about animations. how to. SEO trade off.
+
+
+
+- settings page
+  - logout
+  - profile picture
+
 - bootstrap random images
 - avatar and facebook sync
 - collectionfs, gridfs, dropzone

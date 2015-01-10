@@ -1,18 +1,19 @@
-
 <template name="forgot">
+  <div class="forgot account page">
 
-  <div class="nav"><span class="title">Recover Password</span></div>
+    <div class="nav"><span class="title">Recover Password</span></div>
 
-  <div class="forgot account">
-    <form id="recover">
-      <input type="text" name="email" placeholder="email" autocorrect="off" autocapitalize="off">
-      <div class="error">{{error}}</div>
-      <div class="message">{{message}}</div>
-      <input type="submit" value="send recovery email">
-    </form>
+    <div class="content under-nav above-toolbar">
+      <form id="recover">
+        <input type="text" name="email" placeholder="email" autocorrect="off" autocapitalize="off">
+        <div class="error">{{error}}</div>
+        <div class="message">{{message}}</div>
+        <input type="submit" value="send recovery email">
+      </form>
+    </div>
 
-    <div class="links">
-      <a href="{{pathFor 'login'}}"><span>login</span></a>
+    <div class="toolbar">
+      <div class="toLogin">login</div>
     </div>
 
   </div>

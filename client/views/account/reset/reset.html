@@ -1,16 +1,17 @@
 
 <template name="reset">
+  <div class="reset account page">
+    <div class="nav"><span class="title">Reset Password</span></div>
 
-  <div class="nav"><span class="title">Reset Password</span></div>
-
-  <div class="reset account">
-    <form id="reset">
-      <input type="password" name="password" placeholder="new password" autocorrect="off" autocapitalize="off">
-      <input type="password" name="verify" placeholder="verify password" autocorrect="off" autocapitalize="off">
-      <div class="error">{{error}}</div>
-      <div class="message">{{message}}</div>
-      <input type="submit" value="change password">
-    </form>
+    <div class="content under-nav">
+      <form id="reset">
+        <input type="password" name="password" placeholder="new password" autocorrect="off" autocapitalize="off">
+        <input type="password" name="verify" placeholder="verify password" autocorrect="off" autocapitalize="off">
+        <div class="error">{{error}}</div>
+        <div class="message">{{message}}</div>
+        <input type="submit" value="change password">
+      </form>
+    </div>
 
   </div>
 </template>

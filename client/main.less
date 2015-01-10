@@ -1,18 +1,3 @@
-html {
-  width: 100%;
-}
-body {
-  margin: 0;
-  width: 100%;
-  font-family: 'roboto', helvetica, sans-serif;;
-}
-
-@font-face {
-  font-family: 'roboto';
-  src: url('/fonts/roboto/Roboto-Thin.ttf');
-}
-
-
 // primary color, blue
 @color1: #0074D9;
 @textColor1: #FFFFFF;
@@ -37,10 +22,22 @@ body {
 @buttonHeight: 50px;
 
 
-.scrollable-y {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+@font-face {
+  font-family: 'roboto';
+  src: url('/fonts/roboto/Roboto-Thin.ttf');
 }
+
+
+html {
+  width: 100%;
+}
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'roboto', helvetica, sans-serif;;
+}
+
+
 
 @import "views/leaderboard/leaderboard.import.less";
 @import "views/account/account.import.less";
@@ -48,8 +45,52 @@ body {
 @import "components/loader.import.less";
 
 
+.yield {
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .page {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .content {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      &.under-nav {
+        top: @navHeight;
+      }
+      &.above-toolbar {
+        bottom: @toolbarHeight;
+      }
+      &.above-toolbar2 {
+        bottom: @toolbarHeight*2;
+      }
+      &.above-toolbar3 {
+        bottom: @toolbarHeight*3;
+      }
+    }
+  }
+}
+
+
+
 .nav {
-  position: fixed;
+  z-index: 100;
+  position: absolute;
   top: 0;
   background-color: @color1;
   height: @navHeight;
@@ -89,38 +130,60 @@ body {
   }
 }
 
+
 .toolbar {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  height: @toolbarHeight;
   background-color: @color2;
   width: 100%;
   text-align: center;
   line-height: @toolbarHeight;
   span {
-    color: @textColor2;
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
   }
+  :nth-child(1) {
+    background-color: @color2;
+    color: @textColor2;
+  }
+  :nth-child(2) {
+    background-color: @color1;
+    color: @textColor1;
+  }
+  :nth-child(3) {
+    background-color: @color4;
+    color: @textColor4;
+  }
 }
 
+.toolbar2 {
+  .toolbar;
+  height: 2*@toolbarHeight;
+}
+
+.toolbar3 {
+  .toolbar;
+  height: 3*@toolbarHeight;
+}
+
+
+
+
 .loading {
-  margin-top: 3*@navHeight;
-  height: 100%;
   .loader {
     position: absolute;
-    top: ~"calc(50% - @navHeight)";
+    top: ~"calc(50% - 60px)";
     left: ~"calc(50% - 30px)";
   }
 }
 
 .notFound {
-  margin-top: 3*@navHeight;
-  height: 100%;
-  line-height: 100%;
-  text-align: center;
   .code {
+    text-align: center;
+    position: absolute;
+    top: ~"calc(50% - 60px)";
+    width: 100%;
     font-family: monospace;
     font-size: 64px;
   }

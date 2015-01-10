@@ -7,7 +7,7 @@ App.info({
   author: 'Chet Corcos',
   email: 'ccorcos@gmail.com',
   website: 'http://www.chetcorcos.com',
-  version: '1.0'
+  version: '1.0.0'
 });
 
 

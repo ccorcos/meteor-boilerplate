@@ -1,10 +1,7 @@
 .account {
 
-  margin-top: @navHeight + 15px;
-  margin-bottom: @toolbarHeight;
-
-  &.login {
-    margin-bottom: 2*@toolbarHeight;
+  .content {
+    margin-top: 15px;
   }
 
   .error {
@@ -28,32 +25,5 @@
     color: @textColor4;
     background-color: @color4;
     margin-bottom: 15px;
-  }
-
-  .links {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    a:nth-child(1) {
-      background-color: @color2;
-      color: @textColor2;
-    }
-    a:nth-child(2) {
-      background-color: @color1;
-      color: @textColor1;
-    }
-    a {
-      height: @toolbarHeight;
-      width: 100%;
-      text-align: center;
-      line-height: @toolbarHeight;
-      display: block;
-      span {
-        height: @toolbarHeight;
-        display: inline-block;
-        vertical-align: middle;
-        line-height: @toolbarHeight;
-      }
-    }
   }
 }

@@ -23,6 +23,7 @@ Router.route 'home',
       return Meteor.subscribe 'users'
 
 
+Router.route 'settings'
 
 
 Router.route 'login'

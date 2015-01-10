@@ -1,23 +1,27 @@
 <template name="layout">
-  {{> yield}}
+  <div class="yield">
+    {{> yield}}
+  </div>
 </template>
 
 <template name="loading">
-  <div class="loading">
+  <div class="loading page">
     <div class="nav">
       <span class="title">Loading</span>
     </div>
-    
-    {{>loader}}
-
+    <div class="content under-nav">
+      {{>loader}}
+    </div>
   </div>
 </template>
 
 <template name="notFound">
-  <div class="notFound">
+  <div class="notFound page">
     <div class="nav">
       <span class="title">Error</span>
     </div>
-    <div class="code">404</div>
+    <div class="content under-nav">
+      <div class="code">404</div>
+    </div>
   </div>
 </template>

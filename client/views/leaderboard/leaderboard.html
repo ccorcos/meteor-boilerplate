@@ -1,19 +1,23 @@
 <template name="leaderboard">
-  <div class="leaderboard">
+  <div class="leaderboard page">
     <div class="nav">
       <span class="title">Leaderboard</span>
       <div class="right"><i class="entypo logout"></i></div>
     </div>
 
-    {{#each users}}
-      {{>user}}
-    {{/each}}
+    <div class="content under-nav above-toolbar">
+      {{#each users}}
+        {{>user}}
+      {{/each}}
+    </div>
 
-    {{#if selected}}
-      <div class="add5 toolbar"><span>Add 5</span></div>
-    {{else}}
-      <div class="toolbar"><span>Select a user</span></div>
-    {{/if}}
+    <div class="toolbar">
+      {{#if selected}}
+        <div class="add5"><span>Add 5</span></div>
+      {{else}}
+        <div><span>Select a user</span></div>
+      {{/if}}
+    </div>
   </div>
 </template>
 

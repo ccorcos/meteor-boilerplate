@@ -1,5 +1,5 @@
 @afterLoginSignup = ->
-  Router.go 'home'
+  Router.go 'settings'
 
 Template.login.events
   'click .toForgot': (e,t) ->

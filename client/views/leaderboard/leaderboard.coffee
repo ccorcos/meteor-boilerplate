@@ -9,6 +9,8 @@ Template.leaderboard.events
     Meteor.call 'add5', Session.get 'selected'
   'click .logout': (e,t) ->
     Meteor.logout()
+  'click .toSettings': (e,t) ->
+    Router.go 'settings'
 
 Template.user.helpers
   isSelected: () -> 

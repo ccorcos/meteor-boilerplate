@@ -50,6 +50,7 @@ This repo is a boilerplate for meteor projects that have users, collections, and
 - [stevezhu:lodash](https://github.com/stevezhu/meteor-lodash.git)
 - [anti:fake](https://github.com/anticoders/meteor-fake.git)
 - [iron:router](https://github.com/eventedmind/iron-router)
+- [meteorhacks:subs-manager](https://github.com/meteorhacks/subs-manager)
 
 * remove autopublish
 * remove insecure

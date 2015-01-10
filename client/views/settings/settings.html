@@ -1,5 +1,21 @@
 <template name="settings">
-  {{#with currentUser}}
-    {{username}}: {{score}}
-  {{/with}}
+  <div class="settings page">
+
+    <div class="nav">
+      <div class="left exitSettings"><span class="entypo cross"></span></div>
+      <div class="title">Settings</div>
+    </div>
+
+    {{#with currentUser}}
+    <div class="content under-nav above-toolbar">
+        <div class="info">
+          {{username}}: {{score}}
+        </div>
+    </div>
+    {{/with}}
+
+    <div class="toolbar">
+      <div class="logout">logout</div>
+    </div>
+  </div>
 </template>

@@ -1,3 +1,9 @@
+
+
+@subs = new SubsManager
+  cacheLimit: 20
+  expireIn: 5
+
 Router.configure
   layoutTemplate: 'layout'
   loadingTemplate: 'loading'
@@ -15,15 +21,17 @@ Router.onBeforeAction ->
     except: ['login', 'signup', 'forgot', 'reset']
 
   
-Router.route 'home',
+Router.route 'leaderboard',
   path: '/'
-  template: 'leaderboard'
   waitOn: -> 
     if Meteor.userId()
-      return Meteor.subscribe 'users'
+      return subs.subscribe 'users'
 
 
-Router.route 'settings'
+Router.route 'settings',
+  waitOn: -> 
+    if Meteor.userId()
+      return subs.subscribe 'user', Meteor.userId()
 
 
 Router.route 'login'
@@ -34,7 +42,7 @@ Router.route 'reset',
   path: 'reset/:id'
   onBeforeAction: ->
     unless @params.id
-      @redirect 'home'
+      @redirect 'leaderboard'
     Session.set 'resetPasswordToken', @params.id
     @next()
 

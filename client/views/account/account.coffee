@@ -1,4 +1,7 @@
-@afterLoginSignup = ->
+@afterLogin = ->
+  Router.go 'leaderboard'
+
+@afterSignup = ->
   Router.go 'settings'
 
 Template.login.events

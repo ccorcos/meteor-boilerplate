@@ -12,8 +12,8 @@
 
 
 - settings page
-  - logout
-  - profile picture
+  - profile picture, upload with CollectionFS
+  - connect with facebook to get profile picture
 
 - bootstrap random images
 - avatar and facebook sync

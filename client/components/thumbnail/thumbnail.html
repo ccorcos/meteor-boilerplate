@@ -1,0 +1,13 @@
+<template name="thumbnail">
+  <div class="thumbnail-wrapper">
+    {{#if thumbnailUrl}}
+        <img class="thumbnail" src="{{thumbnailUrl}}">
+    {{else}}
+        <img class="thumbnail" src="http://static.squarespace.com/static/523ce201e4b0cd883dbb8bbf/t/53bf2302e4b06e125c374401/1405035267633/profile-icon.png">
+    {{/if}}
+
+    {{#if editable}}
+      <input type="file" class="under-thumbnail" accept="image/*" id="thumbnail-upload">
+    {{/if}}
+  </div>
+</template>

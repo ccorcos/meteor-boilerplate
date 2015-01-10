@@ -8,8 +8,11 @@
 
     {{#with currentUser}}
     <div class="content under-nav above-toolbar">
+
+        {{> thumbnail editable=true}}
+        
         <div class="info">
-          {{username}}: {{score}}
+          <div>{{username}}: {{score}}</div>
         </div>
     </div>
     {{/with}}

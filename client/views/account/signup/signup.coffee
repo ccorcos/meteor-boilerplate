@@ -28,4 +28,4 @@ Template.signup.events
           error(err.reason)
         else
           noError()
-          afterLoginSignup()
+          afterSignup()

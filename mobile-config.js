@@ -6,14 +6,16 @@ App.info({
   description: 'A Leaderboard boilerplate app for Meteor!',
   author: 'Chet Corcos',
   email: 'ccorcos@gmail.com',
-  website: 'http://www.chetcorcos.com'
+  website: 'http://www.chetcorcos.com',
+  version: '1.0'
 });
+
 
 App.icons({
   // iOS
-  'iphone': 'public/icons/icon-60x60.png',
-  'iphone_2x': 'public/icons/icon-60x60@2x.png',
-  'iphone_3x': 'public/icons/icon-60x60@3x.png',
+  'iphone': 'public/icons/icon-57x57.png',
+  'iphone_2x': 'public/icons/icon-57x57@2x.png',
+  'iphone_3x': 'public/icons/icon-57x57@3x.png',
   'ipad': 'public/icons/icon-72x72.png',
   'ipad_2x': 'public/icons/icon-72x72@2x.png',
 

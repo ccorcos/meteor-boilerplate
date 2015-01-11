@@ -9,6 +9,7 @@ blaze@2.0.4
 blaze-tools@1.0.2
 boilerplate-generator@1.0.2
 callback-hook@1.0.2
+ccorcos:clientside-image-manipulation@1.0.0
 cfs:access-point@0.1.43
 cfs:base-package@0.0.27
 cfs:collection@0.5.3
@@ -56,6 +57,7 @@ lauricio:less-autoprefixer@1.0.7
 livedata@1.0.12
 localstorage@1.0.2
 logging@1.0.6
+matb33:collection-hooks@0.7.7
 meteor@1.1.4
 meteor-platform@1.2.1
 meteorhacks:subs-manager@1.2.4

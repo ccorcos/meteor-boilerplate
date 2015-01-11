@@ -2,11 +2,12 @@
 
 ## To Do:
 
-- when changing an image, reactively update the css
-- delete old thumbnail upon new upload
+- when changing an image, reactively update the css XXXX
 - fix css for images in leaderboard, whats the pattern for that
 - make responsive design with break points / viewport stuff
-- make sure upload works nice on mobile
+
+
+
 - connect with facebook to get profile picture
 
 
@@ -26,14 +27,6 @@
 
 Later:
 - email for recover password
-- deploy with mup
-- graphicsmagick for thumbnails.
-
-
-
-
-
-
 
 
 
@@ -55,6 +48,7 @@ This repo is a boilerplate for meteor projects that have users, collections, and
 - [meteorhacks:subs-manager](https://github.com/meteorhacks/subs-manager)
 - [reywood:publish-composite](https://github.com/englue/meteor-publish-composite/)
 - [dburles:collection-helpers](https://github.com/dburles/meteor-collection-helpers)
+- [matb33:collection-hooks](https://github.com/matb33/meteor-collection-hooks)
 
 * remove autopublish
 * remove insecure
@@ -77,6 +71,7 @@ All the files in the `client` folder are sent only to the client.
 
 All the files in the `lib` folder are sent to both the client and the server and are loaded first.
 
+- `collections.coffee` contains your collections, and collection hooks/helpers.
 - `methods.coffee` contain all the Meteor.methods. There given to the client and the server so the client can do latency compensation by simulating the method.
 - `router.coffee` contains all the Iron Router configuration.
 - `setup.coffee` is where you do any environment setup.

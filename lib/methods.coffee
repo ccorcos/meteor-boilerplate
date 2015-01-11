@@ -9,3 +9,8 @@ Meteor.methods
     check fileId, String
     if @userId
       Meteor.users.update {_id:@userId}, {$set: {imgId: fileId}}
+      # cleanup
+      Images.remove 
+        'metadata.ownerId': @userId
+        _id: {$ne: fileId}
+        

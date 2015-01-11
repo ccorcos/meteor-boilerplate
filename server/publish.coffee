@@ -11,7 +11,8 @@ Meteor.publishComposite 'users', () ->
             imgId: 1
       children: [{
         find: (user) ->
-          Images.find(user.imgId)
+          if user.imgId?
+            Images.find(user.imgId)
         }]}
 
 Meteor.publishComposite 'user', (userId) ->
@@ -26,7 +27,8 @@ Meteor.publishComposite 'user', (userId) ->
             imgId: 1
       children: [{
         find: (user) ->
-          Images.find(user.imgId)
+          if user.imgId?
+            Images.find(user.imgId)
         }]}
 
 

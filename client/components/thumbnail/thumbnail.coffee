@@ -3,17 +3,21 @@ Template.thumbnail.events
     file = e.target.files[0]
     if not file? then return
 
-    img = new FS.File(file)
-    img.metadata =  
-      date: Date.now()
-      ownerId: Meteor.userId()
+    data = processImage file, 200, 200, (data) ->
+      
+      img = new FS.File(data)
 
-    Images.insert img,  (err, fileObj) ->
-      # console.log fileObj
-      if err
-        console.log err
-      else
-        Meteor.call 'setImg', fileObj._id
+      img.metadata =  
+        date: Date.now()
+        ownerId: Meteor.userId()
+
+      Images.insert img,  (err, fileObj) ->
+        if err
+          console.log err
+        else
+          Meteor.call 'setImg', fileObj._id
+
+
 
 Template.thumbnail.rendered = ->
   $thumb = $(@find('img.thumbnail'))

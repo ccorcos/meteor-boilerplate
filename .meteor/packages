@@ -19,3 +19,5 @@ cfs:standard-packages
 cfs:gridfs
 reywood:publish-composite
 dburles:collection-helpers
+matb33:collection-hooks
+ccorcos:clientside-image-manipulation

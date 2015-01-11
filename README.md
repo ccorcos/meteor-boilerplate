@@ -7,9 +7,8 @@
 - make responsive design with break points / viewport stuff
 
 - connect with facebook to get profile picture
-
 - splash screen iPhone 6, iPhone 6+, test all of them! Android splash screen
-- meteor add launch-screen? fast-render
+- launch-screen? fast-render?
 - test platforms
 
 Later:
@@ -56,6 +55,7 @@ The stylesheets basically give you the following format for a page:
 - [dburles:collection-helpers](https://github.com/dburles/meteor-collection-helpers)
 - [matb33:collection-hooks](https://github.com/matb33/meteor-collection-hooks)
 - [percolate:velocityjs](https://github.com/percolatestudio/meteor-velocityjs.git)
+- [meteorhacks:fast-render](https://github.com/meteorhacks/fast-render)
 
 * remove autopublish
 * remove insecure

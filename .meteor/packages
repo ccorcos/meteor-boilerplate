@@ -22,3 +22,4 @@ dburles:collection-helpers
 matb33:collection-hooks
 ccorcos:clientside-image-manipulation
 percolate:velocityjs
+meteorhacks:fast-render

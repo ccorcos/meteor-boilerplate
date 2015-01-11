@@ -15,3 +15,7 @@ wizonesolutions:underscore-string
 anti:fake
 fastclick
 meteorhacks:subs-manager
+cfs:standard-packages
+cfs:gridfs
+reywood:publish-composite
+dburles:collection-helpers

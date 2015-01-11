@@ -30,6 +30,7 @@
 
 <template name="user">
   <div class="user {{isSelected}}">
-    <span>{{username}}: {{score}}</span>
+    <div class="thumb">{{>thumbnail}}</div>
+    <div class="info">{{username}}: {{score}}</div>
   </div>
 </template>

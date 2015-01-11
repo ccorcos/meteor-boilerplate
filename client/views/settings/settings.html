@@ -8,12 +8,13 @@
 
     {{#with currentUser}}
     <div class="content under-nav above-toolbar">
-
+      <div class="avatar">
         {{> thumbnail editable=true}}
-        
-        <div class="info">
-          <div>{{username}}: {{score}}</div>
-        </div>
+      </div>
+              
+      <div class="info">
+        <div>{{username}}: {{score}}</div>
+      </div>
     </div>
     {{/with}}
 

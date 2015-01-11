@@ -2,23 +2,20 @@
 
 ## To Do:
 
+- when changing an image, reactively update the css
+- delete old thumbnail upon new upload
+- fix css for images in leaderboard, whats the pattern for that
+- make responsive design with break points / viewport stuff
+- make sure upload works nice on mobile
+- connect with facebook to get profile picture
+
+
 - no SEO because we need to transition based on events to use animation. plus everything is behind a login screen
-
-- styles more like the blaze-animations with absolute rather than fixed positioning
-
 - write about nav, content, toolbar formatting.
 - write about animations. how to. SEO trade off.
+- write about packages.
+- put animations in place for the table insert, move, remove
 
-
-
-- settings page
-  - profile picture, upload with CollectionFS
-  - connect with facebook to get profile picture
-
-- bootstrap random images
-- avatar and facebook sync
-- collectionfs, gridfs, dropzone
-- user profile page?
 
 - splash screen iPhone 6, iPhone 6+, test all of them! Android splash screen
 - meteor add launch-screen?
@@ -26,14 +23,19 @@
 
 - helpful patterns, submit form, error, message, etc. use a reactive variable!
 
-Maybe:
-- spiderable
-- fastrender
-- SEO title and description
 
 Later:
 - email for recover password
 - deploy with mup
+- graphicsmagick for thumbnails.
+
+
+
+
+
+
+
+
 
 # Meteor Boilerplate
 
@@ -51,6 +53,8 @@ This repo is a boilerplate for meteor projects that have users, collections, and
 - [anti:fake](https://github.com/anticoders/meteor-fake.git)
 - [iron:router](https://github.com/eventedmind/iron-router)
 - [meteorhacks:subs-manager](https://github.com/meteorhacks/subs-manager)
+- [reywood:publish-composite](https://github.com/englue/meteor-publish-composite/)
+- [dburles:collection-helpers](https://github.com/dburles/meteor-collection-helpers)
 
 * remove autopublish
 * remove insecure

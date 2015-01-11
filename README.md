@@ -6,33 +6,39 @@
 - fix css for images in leaderboard, whats the pattern for that
 - make responsive design with break points / viewport stuff
 
-
-
 - connect with facebook to get profile picture
 
-
-- no SEO because we need to transition based on events to use animation. plus everything is behind a login screen
-- write about nav, content, toolbar formatting.
-- write about animations. how to. SEO trade off.
-- write about packages.
-- put animations in place for the table insert, move, remove
-
-
 - splash screen iPhone 6, iPhone 6+, test all of them! Android splash screen
-- meteor add launch-screen?
+- meteor add launch-screen? fast-render
 - test platforms
-
-- helpful patterns, submit form, error, message, etc. use a reactive variable!
-
 
 Later:
 - email for recover password
 
 
 
+
 # Meteor Boilerplate
 
 This repo is a boilerplate for meteor projects that have users, collections, and routing.
+
+I've left out all SEO stuff from this project because this app inherently runs behind a login. Thus spiderable is not necessary. 
+
+The stylesheets basically give you the following format for a page:
+
+    <template name="leaderboard">
+      <div class="leaderboard page">
+        <div class="nav">
+          <div class="title">Title</div>
+        </div>
+        <div class="content under-nav above-toolbar">
+
+        </div>
+        <div class="toolbar">
+          <div>toolbar</div>
+        </div>
+      </div>
+    </template>
 
 ## Packages
 
@@ -49,6 +55,7 @@ This repo is a boilerplate for meteor projects that have users, collections, and
 - [reywood:publish-composite](https://github.com/englue/meteor-publish-composite/)
 - [dburles:collection-helpers](https://github.com/dburles/meteor-collection-helpers)
 - [matb33:collection-hooks](https://github.com/matb33/meteor-collection-hooks)
+- [percolate:velocityjs](https://github.com/percolatestudio/meteor-velocityjs.git)
 
 * remove autopublish
 * remove insecure

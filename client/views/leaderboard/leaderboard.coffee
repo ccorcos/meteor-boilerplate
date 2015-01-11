@@ -22,3 +22,36 @@ Template.user.helpers
 Template.user.events
   'click .user': (e,t) ->
     Session.set 'selected', @_id
+
+
+
+Template.leaderboard.rendered = ->
+  # animations!
+  @find(".list")._uihooks =
+    insertElement: (node, next) ->
+      $node = $(node)
+      # set the opacity initally to zero
+      $node.css('opacity', '0')
+      # insert to the dom
+      $node.insertBefore(next)
+      # animate the opacity
+      $node.velocity {opacity: 1},
+        duration: 500
+        easing: 'ease-in-out'
+        queue: false
+
+    moveElement: (node, next) ->
+      $node = $(node)
+      $next = $(next)
+      $node.insertBefore(next)
+
+    removeElement: (node) ->
+      $node = $(node)
+      # animate off the screen to the left
+      $node.velocity {translateX: '-100%'},
+        duration: 250
+        easing: 'ease-in'
+        queue: false
+        complete: -> 
+          # remove when complete
+          $node.remove()

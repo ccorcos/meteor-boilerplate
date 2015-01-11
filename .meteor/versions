@@ -69,6 +69,7 @@ mongo-livedata@1.0.7
 npm-bcrypt@0.7.7
 observe-sequence@1.0.4
 ordered-dict@1.0.2
+percolate:velocityjs@1.1.0
 raix:eventemitter@0.1.1
 random@1.0.2
 reactive-dict@1.0.5

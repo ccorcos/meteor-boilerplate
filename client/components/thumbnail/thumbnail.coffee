@@ -7,15 +7,16 @@ Template.thumbnail.events
       
       img = new FS.File(data)
 
-      img.metadata =  
-        date: Date.now()
-        ownerId: Meteor.userId()
+      # This happens in the .before.insert hook
+      # img.metadata =  
+      #   date: Date.now()
+      #   ownerId: Meteor.userId()
 
       Images.insert img,  (err, fileObj) ->
         if err
           console.log err
-        else
-          Meteor.call 'setImg', fileObj._id
+        # else
+        #   Meteor.call 'setImg', fileObj._id
 
 
 
